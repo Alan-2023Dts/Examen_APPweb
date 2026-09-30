@@ -1,0 +1,13 @@
+{
+  "name": "aplicacion-servicios",
+  "version": "1.0.0",
+  "description": "API base para una aplicación de servicios",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Centro Nexo: servicios digitales para hacer crecer tu proyecto.">
+  <title>Centro Nexo | Servicios digitales</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Centro Nexo, inicio">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Centro <strong>Nexo</strong></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegacion principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#solicitud">Solicitar asesoria</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Soluciones que conectan</p>
+          <h1>Tu proximo paso digital empieza aqui.</h1>
+          <p class="hero-text">En Centro Nexo convertimos ideas en experiencias digitales claras, utiles y listas para crecer contigo.</p>
+          <a class="button button-primary" href="#solicitud">Cuentanos tu proyecto <span aria-hidden="true">&#8594;</span></a>
+        </div>
+        <div class="hero-note" aria-label="Compromiso de Centro Nexo">
+          <span class="note-number">01</span>
+          <p>Escuchamos el reto, trazamos la ruta y te acompanamos hasta ver resultados.</p>
+          <span class="note-line" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Lo que hacemos</p>
+            <h2 id="services-title">Servicios pensados para avanzar.</h2>
+          </div>
+          <p class="section-intro">Elige el punto de partida y construyamos una solucion que tenga sentido para tu negocio.</p>
+        </div>
+        <div id="services-status" class="status-message status-loading" role="status" aria-live="polite">Cargando servicios...</div>
+        <div id="services-list" class="services-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="request-section" id="solicitud" aria-labelledby="request-title">
+      <div class="container request-grid">
+        <div class="request-copy">
+          <p class="eyebrow">Hablemos</p>
+          <h2 id="request-title">Dale forma a tu siguiente idea.</h2>
+          <p>Comparte algunos detalles y nuestro equipo revisara tu solicitud para ponerse en contacto contigo.</p>
+          <div class="contact-detail">
+            <span class="contact-icon" aria-hidden="true">&#8599;</span>
+            <span>Respuesta clara, sin compromiso.</span>
+          </div>
+        </div>
+
+        <form id="request-form" class="request-form" novalidate>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          <div class="form-row">
+            <div class="field-group">
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="nombre-error">
+              <small id="nombre-error" class="field-error"></small>
+            </div>
+            <div class="field-group">
+              <label for="correo">Correo electronico <span aria-hidden="true">*</span></label>
+              <input id="correo" name="correo" type="email" autocomplete="email" required aria-describedby="correo-error">
+              <small id="correo-error" class="field-error"></small>
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="servicio">Servicio de interes <span aria-hidden="true">*</span></label>
+            <select id="servicio" name="servicio" required aria-describedby="servicio-error" disabled>
+              <option value="">Cargando servicios...</option>
+            </select>
+            <small id="servicio-error" class="field-error"></small>
+          </div>
+          <div class="field-group">
+            <label for="comentario">Cuentanos brevemente <span aria-hidden="true">*</span></label>
+            <textarea id="comentario" name="comentario" rows="4" required aria-describedby="comentario-error" placeholder="Que necesitas resolver?"></textarea>
+            <small id="comentario-error" class="field-error"></small>
+          </div>
+          <button class="button button-submit" type="submit" id="submit-button">Enviar solicitud <span aria-hidden="true">&#8594;</span></button>
+          <p class="required-note"><span aria-hidden="true">*</span> Campos obligatorios</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="brand-footer">Centro <strong>Nexo</strong></p>
+      <p>Servicios digitales con proposito.</p>
+      <p>&copy; 2026 Centro Nexo</p>
+    </div>
+  </footer>
+</body>
+</html>
